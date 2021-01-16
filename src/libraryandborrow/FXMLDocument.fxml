@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="631.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="libraryandborrow.FXMLDocumentController">
+   <children>
+      <TextField fx:id="output" layoutX="14.0" layoutY="207.0" prefHeight="173.0" prefWidth="513.0" />
+      <TextField fx:id="userInput" layoutX="95.0" layoutY="175.0" prefHeight="25.0" prefWidth="430.0" />
+      <Button fx:id="delbook" layoutX="423.0" layoutY="108.0" mnemonicParsing="false" onAction="#DeletBook" prefHeight="25.0" prefWidth="111.0" text="Delete Book" />
+      <Button fx:id="edbook" layoutX="300.0" layoutY="108.0" mnemonicParsing="false" onAction="#EditBook" prefHeight="25.0" prefWidth="111.0" text="Edit Book" />
+      <Button fx:id="vibook" layoutX="191.0" layoutY="108.0" mnemonicParsing="false" onAction="#ViewBook" prefHeight="25.0" prefWidth="100.0" text="View Books" />
+      <Button fx:id="adbook" layoutX="84.0" layoutY="108.0" mnemonicParsing="false" onAction="#NewBook" prefHeight="25.0" prefWidth="100.0" text="Add new Book" />
+      <TextField fx:id="nameof" alignment="CENTER" layoutX="95.0" layoutY="24.0" prefHeight="38.0" prefWidth="430.0" text="Library Book System">
+         <font>
+            <Font name="Ink Free" size="25.0" />
+         </font>
+      </TextField>
+      <Button fx:id="adborrow" layoutX="62.0" layoutY="108.0" mnemonicParsing="false" onAction="#NewBorrower" prefHeight="25.0" prefWidth="122.0" text="Add new Borrower" />
+      <Button fx:id="viborrow" layoutX="191.0" layoutY="108.0" mnemonicParsing="false" onAction="#ViewBorrower" prefHeight="25.0" prefWidth="100.0" text="View Borrowers" />
+      <Button fx:id="edborrow" layoutX="300.0" layoutY="108.0" mnemonicParsing="false" onAction="#EditBorrower" prefHeight="25.0" prefWidth="111.0" text="Edit Borrowers" />
+      <Button fx:id="delborrow" layoutX="423.0" layoutY="108.0" mnemonicParsing="false" onAction="#DeleteBorrow" prefHeight="25.0" prefWidth="111.0" text="Delete Borrower" />
+      <Button fx:id="switchmode" layoutX="221.0" layoutY="144.0" mnemonicParsing="false" onAction="#switchmode" text="Switch to borrow mode" />
+      <Button fx:id="writeto" layoutX="534.0" layoutY="207.0" mnemonicParsing="false" onAction="#writetofile" text="Write to file" />
+      <Button fx:id="readto" layoutX="534.0" layoutY="244.0" mnemonicParsing="false" onAction="#readfromfile" text="Read from file" />
+      <Button fx:id="confirm" layoutX="548.0" layoutY="294.0" mnemonicParsing="false" onAction="#pressed" text="confirm" />
+   </children>
+</AnchorPane>
